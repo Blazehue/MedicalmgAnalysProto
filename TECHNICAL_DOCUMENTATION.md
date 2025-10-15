@@ -80,43 +80,49 @@ MedicalImgAnalys/
 
 #### 1. Image Processor (`image_processor.py`)
 
-Handles loading, preprocessing, and enhancement of medical images:
-- Loading DICOM and standard image formats
-- Preprocessing for X-ray images (noise reduction, CLAHE, gamma correction)
-- Preprocessing for MRI images (bias field correction, intensity normalization)
-- Image enhancement techniques
+Handles loading, preprocessing, and enhancement of medical images with specialized techniques for different modalities:
+- Loading DICOM and standard image formats (PNG, JPG, TIFF, BMP)
+- Preprocessing for X-ray images (noise reduction, CLAHE, gamma correction, edge enhancement)
+- Preprocessing for MRI images (bias field correction, intensity normalization, bilateral filtering)
+- Image enhancement techniques for improved visualization
+- Format conversion and standardization
 
 #### 2. Abnormality Detector (`abnormality_detector.py`)
 
-Implements algorithms for detecting medical abnormalities:
-- Lung nodule detection for X-rays
-- Bone fracture detection for X-rays
-- Brain anomaly detection for MRIs
-- Feature extraction and classification
+Implements specialized algorithms for detecting medical abnormalities in different image types:
+- Lung nodule detection for X-rays using circular Hough transform
+- Bone fracture detection for X-rays using edge and line analysis
+- Brain anomaly detection for MRIs using symmetry and texture analysis
+- Feature extraction and classification algorithms
+- Confidence scoring for detected abnormalities
 
 #### 3. Statistical Reporter (`statistical_reporter.py`)
 
-Generates comprehensive analysis reports:
-- Statistical analysis of processed images
-- Visualization generation
-- PDF report creation
-- CSV data export
+Generates comprehensive analysis reports with statistical analysis and visualizations:
+- Statistical analysis of processed images (mean, std, histogram analysis)
+- Visualization generation (comparison plots, histograms, overlays)
+- PDF report creation with professional formatting
+- CSV data export for further analysis
+- Summary statistics and metrics calculation
 
 #### 4. GUI Interface (`gui_interface.py`)
 
-Provides a user-friendly desktop interface:
-- File loading and management
-- Image display and comparison
-- Analysis workflow control
-- Results visualization
-- Report generation
+Provides a user-friendly desktop interface with intuitive workflow:
+- File loading and management with multi-format support
+- Image display and comparison in dedicated panels
+- Analysis workflow control with progress monitoring
+- Results visualization with interactive components
+- Report generation and export functionality
+- Status monitoring and user feedback
 
 #### 5. Utilities (`utils.py`)
 
-Supporting functions and helper methods:
-- Batch processing functions
-- File handling utilities
-- Data conversion functions
+Supporting functions and helper methods for various operations:
+- Batch processing functions for multiple images
+- File handling utilities for different formats
+- Data conversion functions between different representations
+- Helper methods for common operations
+- Error handling and logging utilities
 
 ## Development Process
 

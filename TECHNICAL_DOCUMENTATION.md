@@ -398,6 +398,46 @@ Planned improvements for future versions:
 11. **AI Model Updates**: Regular updates to detection models with latest research findings
 12. **Performance Improvements**: GPU acceleration and parallel processing for faster analysis
 
+## Algorithms and Methodologies
+
+### Computer Vision Techniques
+
+The Medical Image Analysis Tool employs several classical computer vision techniques tailored for medical imaging:
+
+#### Image Enhancement
+- **Contrast Limited Adaptive Histogram Equalization (CLAHE)**: Improves local contrast while preventing noise amplification
+- **Gamma Correction**: Adjusts image brightness and contrast for optimal visualization
+- **Bilateral Filtering**: Reduces noise while preserving edges in MRI images
+- **Unsharp Masking**: Enhances edges and details in X-ray images
+
+#### Feature Detection
+- **Canny Edge Detection**: Identifies edges in bone structures for fracture analysis
+- **Circular Hough Transform**: Detects circular patterns indicative of lung nodules
+- **Line Detection**: Uses Hough transform to identify bone structures and detect discontinuities
+- **Morphological Operations**: Cleaning and shaping of detected regions
+
+#### Image Segmentation
+- **Thresholding**: Separates regions of interest from background
+- **Region Growing**: Expands regions based on similarity criteria
+- **Watershed Algorithm**: Separates touching objects
+- **Active Contours**: Deforms curves to fit object boundaries
+
+### Machine Learning Approaches
+
+While the current version uses rule-based algorithms, the architecture supports future ML integration:
+
+#### Classical ML Techniques
+- **K-means Clustering**: Used for tissue segmentation in MRI analysis
+- **Support Vector Machines**: Potential for classification tasks
+- **Random Forest**: Ensemble method for robust classification
+- **Principal Component Analysis**: Dimensionality reduction for feature extraction
+
+#### Statistical Analysis
+- **Descriptive Statistics**: Mean, median, standard deviation for image characterization
+- **Correlation Analysis**: Symmetry analysis in brain MRI
+- **Histogram Analysis**: Intensity distribution evaluation
+- **Entropy Calculation**: Texture complexity measurement
+
 ## Contributing
 
 Guidelines for contributing to the project:

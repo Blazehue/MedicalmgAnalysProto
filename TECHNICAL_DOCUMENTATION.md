@@ -17,25 +17,25 @@ This document provides a comprehensive overview of the Medical Image Analysis To
 
 ### Core Technologies
 
-- **Python 3.x**: Primary programming language
-- **OpenCV**: Computer vision library for image processing
-- **NumPy**: Numerical computing library
-- **SciPy**: Scientific computing library
-- **Scikit-learn**: Machine learning library
-- **Matplotlib**: Plotting and visualization library
-- **Seaborn**: Statistical data visualization
-- **Pillow (PIL)**: Python Imaging Library for image handling
-- **PyDicom**: Library for working with DICOM medical image files
-- **FPDF2**: PDF generation library
-- **Tkinter**: GUI framework for desktop application
+- **Python 3.x**: Primary programming language for all components
+- **OpenCV**: Computer vision library for image processing and computer vision tasks
+- **NumPy**: Fundamental package for scientific computing with Python
+- **SciPy**: Library for mathematics, science, and engineering
+- **Scikit-learn**: Machine learning library for data mining and analysis
+- **Matplotlib**: Comprehensive 2D plotting library
+- **Seaborn**: Statistical data visualization based on matplotlib
+- **Pillow (PIL)**: Python Imaging Library for opening, manipulating, and saving image files
+- **PyDicom**: Pure Python package for working with DICOM files
+- **FPDF2**: Simple PDF generation library
+- **Tkinter**: Standard Python interface to the Tk GUI toolkit
 
 ### GUI Framework
 
-- **Tkinter**: Built-in Python GUI toolkit
-- **ttk**: Themed Tkinter widgets
-- **Canvas**: For image display and manipulation
-- **Treeview**: For displaying structured data
-- **Menu and Toolbar**: Standard UI components
+- **Tkinter**: Built-in Python GUI toolkit for desktop applications
+- **ttk**: Themed Tkinter widgets for modern look and feel
+- **Canvas**: For displaying images and creating custom graphics
+- **Treeview**: For displaying tabular data and hierarchical structures
+- **Menu and Toolbar**: Standard UI components for application navigation
 
 ### Image Processing Libraries
 

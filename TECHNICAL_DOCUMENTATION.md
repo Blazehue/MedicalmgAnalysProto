@@ -314,10 +314,12 @@ Multiple approaches to ensure accuracy and reliability:
 
 1. Launch the application: `python main.py`
 2. Load an image using File → Open or the Open button
-3. Select image type (X-ray or MRI) from the dropdown
-4. Process the image using the Process button
+3. Select image type (X-ray or MRI) from the dropdown menu
+4. Process the image using the Process button to apply preprocessing
 5. Analyze for abnormalities using the Analyze button
-6. Generate a report using the Report button
+6. Review detected abnormalities in the Abnormalities tab
+7. Generate a comprehensive report using the Report button
+8. Export reports and data using File → Export Report
 
 #### Batch Processing Mode
 
@@ -326,6 +328,39 @@ Multiple approaches to ensure accuracy and reliability:
    ```
    python main.py --batch input_directory output_directory
    ```
+3. Monitor progress in the console output
+4. Review generated reports in the output directory
+5. Check batch_summary.json for overall statistics
+
+#### Programmatic Usage
+
+For integration into other applications or custom workflows:
+
+```python
+from src.image_processor import MedicalImageProcessor
+from src.abnormality_detector import AbnormalityDetector  
+from src.statistical_reporter import StatisticalReporter
+
+# Initialize components
+processor = MedicalImageProcessor()
+detector = AbnormalityDetector()
+reporter = StatisticalReporter("output_dir")
+
+# Load and process image
+image = processor.load_image("path/to/image.dcm")
+processed = processor.preprocess_xray(image)  # or preprocess_mri()
+
+# Detect abnormalities
+nodules = detector.detect_lung_nodules(processed)  # for X-rays
+fractures = detector.detect_bone_fractures(processed)  # for X-rays
+# or detector.detect_brain_anomalies(processed)  # for MRI
+
+# Generate report
+abnormalities = nodules + fractures
+report = reporter.generate_comprehensive_report(
+    "image_path", image, processed, abnormalities, "x-ray"
+)
+```
 
 ### Troubleshooting
 

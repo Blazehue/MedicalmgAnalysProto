@@ -177,17 +177,17 @@ Supporting functions and helper methods for various operations:
 
 #### X-ray Preprocessing
 
-1. **Noise Reduction**: Gaussian filtering to reduce image noise
-2. **Contrast Enhancement**: CLAHE (Contrast Limited Adaptive Histogram Equalization)
-3. **Gamma Correction**: Adjusting brightness and contrast
-4. **Edge Enhancement**: Sharpening techniques to highlight structures
+1. **Noise Reduction**: Gaussian filtering with kernel size 5x5 to reduce image noise while preserving edges
+2. **Contrast Enhancement**: CLAHE (Contrast Limited Adaptive Histogram Equalization) with tile size 8x8
+3. **Gamma Correction**: Adjusting brightness and contrast with gamma value of 1.2 for optimal visualization
+4. **Edge Enhancement**: Unsharp masking technique to highlight important anatomical structures
 
 #### MRI Preprocessing
 
-1. **Bias Field Correction**: Removing intensity inhomogeneities
-2. **Intensity Normalization**: Standardizing intensity values
-3. **Bilateral Filtering**: Edge-preserving smoothing
-4. **Skull Stripping**: Removing non-brain tissues (conceptual)
+1. **Bias Field Correction**: N4ITK bias field correction algorithm to remove intensity inhomogeneities
+2. **Intensity Normalization**: Standardizing intensity values to range [0, 255] for consistency
+3. **Bilateral Filtering**: Edge-preserving smoothing with sigma values 75 and 75 for spatial and intensity domains
+4. **Skull Stripping**: Morphological operations to remove non-brain tissues (conceptual implementation)
 
 ### Abnormality Detection Algorithms
 
@@ -195,28 +195,28 @@ Supporting functions and helper methods for various operations:
 
 ##### Lung Nodule Detection
 
-1. **Region of Interest Selection**: Focusing on lung areas
-2. **Thresholding**: Segmenting potential nodules
-3. **Morphological Operations**: Cleaning up segmented regions
-4. **Feature Extraction**: Size, shape, and intensity features
-5. **Classification**: Determining likelihood of abnormality
+1. **Region of Interest Selection**: Automatic lung area segmentation using thresholding and morphological operations
+2. **Thresholding**: Adaptive thresholding to segment potential nodules from lung background
+3. **Morphological Operations**: Cleaning up segmented regions with opening and closing operations
+4. **Feature Extraction**: Size, shape, and intensity features including circularity, area, and mean intensity
+5. **Classification**: Rule-based classification determining likelihood of abnormality based on features
 
 ##### Bone Fracture Detection
 
-1. **Edge Detection**: Canny edge detection algorithm
-2. **Line Detection**: Hough transform for identifying straight lines
-3. **Discontinuity Analysis**: Identifying breaks in bone structures
-4. **Feature Scoring**: Quantifying fracture likelihood
+1. **Edge Detection**: Canny edge detection algorithm with optimal thresholds for bone structures
+2. **Line Detection**: Probabilistic Hough transform for identifying straight bone lines
+3. **Discontinuity Analysis**: Identifying breaks in bone structures by analyzing line gaps
+4. **Feature Scoring**: Quantifying fracture likelihood based on edge discontinuities and gaps
 
 #### MRI Analysis
 
 ##### Brain Anomaly Detection
 
-1. **Symmetry Analysis**: Comparing left and right brain hemispheres
-2. **Intensity Analysis**: Identifying unusual intensity patterns
-3. **Texture Analysis**: Using Local Binary Patterns for texture features
-4. **Clustering**: K-means clustering for tissue segmentation
-5. **Anomaly Scoring**: Quantifying deviations from normal patterns
+1. **Symmetry Analysis**: Comparing left and right brain hemispheres using flipped image correlation
+2. **Intensity Analysis**: Identifying unusual intensity patterns through statistical outlier detection
+3. **Texture Analysis**: Using Local Binary Patterns for texture feature extraction and comparison
+4. **Clustering**: K-means clustering with k=3 for tissue segmentation (CSF, GM, WM)
+5. **Anomaly Scoring**: Quantifying deviations from normal patterns using statistical measures
 
 ### Statistical Analysis
 

@@ -222,17 +222,19 @@ Supporting functions and helper methods for various operations:
 
 #### Image Metrics
 
-1. **Intensity Statistics**: Mean, median, standard deviation
-2. **Histogram Analysis**: Distribution of pixel intensities
-3. **Contrast Metrics**: Measuring image contrast improvement
-4. **Dynamic Range**: Min/max intensity values
+1. **Intensity Statistics**: Mean, median, standard deviation, min, max values for pixel intensities
+2. **Histogram Analysis**: Distribution of pixel intensities with 256 bins for grayscale images
+3. **Contrast Metrics**: Measuring image contrast improvement using standard deviation ratios
+4. **Dynamic Range**: Min/max intensity values and range calculations for image quality assessment
+5. **Entropy Analysis**: Information content measurement for texture complexity evaluation
 
 #### Abnormality Metrics
 
-1. **Size Measurements**: Area and perimeter calculations
-2. **Shape Descriptors**: Circularity, aspect ratio
-3. **Intensity Features**: Average intensity within regions
-4. **Confidence Scores**: Algorithm confidence in detections
+1. **Size Measurements**: Area and perimeter calculations using pixel counting and chain code algorithms
+2. **Shape Descriptors**: Circularity, aspect ratio, and eccentricity for morphological analysis
+3. **Intensity Features**: Average intensity, standard deviation, and contrast within regions of interest
+4. **Confidence Scores**: Algorithm confidence in detections using multiple feature validation
+5. **Localization Data**: Centroid coordinates and bounding box dimensions for each abnormality
 
 ## Testing Strategy
 

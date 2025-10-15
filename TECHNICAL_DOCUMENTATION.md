@@ -2,7 +2,9 @@
 
 ## Overview
 
-This document provides a comprehensive overview of the Medical Image Analysis Tool, including its technology stack, architecture, development process, and implementation details.
+This document provides a comprehensive overview of the Medical Image Analysis Tool, including its technology stack, architecture, development process, and implementation details. The tool is designed to assist medical professionals and researchers in analyzing X-ray and MRI images for potential abnormalities using classical computer vision and image processing techniques.
+
+The application provides both a graphical user interface for interactive analysis and command-line interfaces for batch processing, making it suitable for both clinical and research environments. All processing is performed locally on the user's machine to ensure data privacy and security.
 
 ## Table of Contents
 

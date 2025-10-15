@@ -581,3 +581,28 @@ While this is a research tool and not a medical device, it is designed with heal
 - **GDPR Alignment**: Follows principles of data minimization and user control
 - **No Analytics**: No usage analytics or telemetry data collection
 - **Transparent Processing**: All processing steps are visible to the user
+
+## Community and Support
+
+### Getting Help
+
+- **Documentation**: Comprehensive documentation is available in README.md and this technical document
+- **GitHub Issues**: Report bugs or request features through the GitHub issue tracker
+- **Community Discussion**: Join discussions on the project's GitHub Discussions page
+- **Email Support**: Contact the development team directly for specific inquiries
+
+### Community Resources
+
+- **Example Datasets**: Sample medical images for testing and demonstration
+- **Tutorials**: Step-by-step guides for common use cases
+- **Best Practices**: Recommendations for optimal usage and interpretation
+- **Research Papers**: References to academic papers that informed the development
+
+### Feedback and Contributions
+
+We welcome feedback and contributions from the community:
+
+- **Bug Reports**: Detailed bug reports help improve the software
+- **Feature Requests**: Suggestions for new features are appreciated
+- **Code Contributions**: Pull requests for bug fixes and enhancements
+- **Documentation Improvements**: Help make the documentation clearer and more comprehensive

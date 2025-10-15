@@ -1,0 +1,2 @@
+analysis_date,image_path,image_type,original_mean_intensity,original_std_intensity,original_contrast,original_entropy,processed_mean_intensity,processed_std_intensity,processed_contrast,processed_entropy,total_abnormalities
+2025-09-14 19:06:07,synthetic_xray.png,x-ray,68.75200271606445,36.718508894683715,0.5340718443697662,6.898006439208984,56.71260452270508,32.10977874499862,0.5661841669102565,6.925718307495117,0

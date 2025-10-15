@@ -55,25 +55,25 @@ This document provides a comprehensive overview of the Medical Image Analysis To
 
 ```
 MedicalImgAnalys/
-├── src/                    # Source code
-│   ├── __init__.py         # Package initializer
-│   ├── abnormality_detector.py  # Abnormality detection algorithms
-│   ├── gui_interface.py    # GUI implementation
-│   ├── image_processor.py  # Image processing functions
-│   ├── statistical_reporter.py  # Reporting and analysis
-│   └── utils.py            # Utility functions
-├── tests/                  # Unit tests
-│   ├── test_detector.py    # Tests for abnormality detector
-│   ├── test_processor.py   # Tests for image processor
-│   └── test_reporter.py    # Tests for statistical reporter
-├── data/                   # Data directory
-│   ├── sample_images/      # Sample medical images
-│   └── output/             # Output files
-├── requirements.txt        # Python dependencies
-├── main.py                 # Main application entry point
-├── example_usage.py        # Example usage scripts
-├── README.md               # Project overview
-└── QUICKSTART.md           # Quick start guide
+├── src/                    # Source code directory containing all Python modules
+│   ├── __init__.py         # Package initializer to make src a Python package
+│   ├── abnormality_detector.py  # Abnormality detection algorithms implementation
+│   ├── gui_interface.py    # GUI implementation using Tkinter
+│   ├── image_processor.py  # Image processing functions and utilities
+│   ├── statistical_reporter.py  # Reporting and statistical analysis functionality
+│   └── utils.py            # Utility functions and helper methods
+├── tests/                  # Unit tests directory for all modules
+│   ├── test_detector.py    # Tests for abnormality detector functionality
+│   ├── test_processor.py   # Tests for image processor functions
+│   └── test_reporter.py    # Tests for statistical reporter components
+├── data/                   # Data directory for sample images and output files
+│   ├── sample_images/      # Sample medical images for testing and demonstration
+│   └── output/             # Output files including reports and processed images
+├── requirements.txt        # Python dependencies and version requirements
+├── main.py                 # Main application entry point and GUI launcher
+├── example_usage.py        # Example usage scripts for programmatic access
+├── README.md               # Project overview and basic usage instructions
+└── QUICKSTART.md           # Quick start guide with installation and usage steps
 ```
 
 ### Core Components

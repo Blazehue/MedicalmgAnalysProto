@@ -513,3 +513,32 @@ For questions or support, please contact the development team through GitHub iss
 - Packaging and distribution
 - User documentation
 - Project release
+
+## Data Privacy and Security
+
+### Data Handling Principles
+
+The Medical Image Analysis Tool follows strict data privacy and security principles:
+
+- **Local Processing**: All image processing occurs locally on the user's machine
+- **No Data Transmission**: Medical images are never transmitted to external servers
+- **Temporary Storage**: Intermediate files are stored temporarily and cleaned up after processing
+- **User Control**: Users maintain complete control over their data at all times
+- **No Data Collection**: The application does not collect or store any user data
+
+### Security Measures
+
+- **File Access Control**: The application only accesses files explicitly selected by the user
+- **Read-Only Operations**: Image files are opened in read-only mode to prevent accidental modification
+- **Secure Output**: Generated reports and data are saved only to user-specified directories
+- **No Network Dependencies**: The application functions completely offline after installation
+- **Dependency Verification**: All third-party libraries are from trusted sources
+
+### Compliance Considerations
+
+While this is a research tool and not a medical device, it is designed with healthcare data sensitivity in mind:
+
+- **HIPAA Considerations**: Designed to minimize exposure of protected health information
+- **GDPR Alignment**: Follows principles of data minimization and user control
+- **No Analytics**: No usage analytics or telemetry data collection
+- **Transparent Processing**: All processing steps are visible to the user

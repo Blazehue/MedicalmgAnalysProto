@@ -365,10 +365,22 @@ report = reporter.generate_comprehensive_report(
 ### Troubleshooting
 
 Common issues and solutions:
-- **Import Errors**: Reinstall dependencies with `pip install -r requirements.txt`
-- **GUI Issues**: Ensure display drivers are up to date
-- **Memory Issues**: Close other applications to free up RAM
-- **DICOM Errors**: Verify pydicom installation and file compatibility
+- **Import Errors**: Reinstall dependencies with `pip install -r requirements.txt` or check Python version compatibility
+- **GUI Issues**: Ensure display drivers are up to date and sufficient screen resolution is available
+- **Memory Issues**: Close other applications to free up RAM or process smaller images
+- **DICOM Errors**: Verify pydicom installation and check if the DICOM file format is supported
+- **Performance Problems**: Consider using SSD storage for faster image loading and processing
+- **Report Generation Failures**: Check write permissions for output directory and available disk space
+- **Image Loading Failures**: Verify image file integrity and format support
+
+### Performance Optimization
+
+Tips for optimal performance:
+- Use SSD storage for image data and temporary files
+- Close unnecessary applications to free up system resources
+- Process one image at a time for large datasets
+- Use virtual environments to avoid dependency conflicts
+- Keep Python and libraries updated to latest stable versions
 
 ## Future Enhancements
 

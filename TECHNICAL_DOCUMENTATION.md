@@ -269,10 +269,11 @@ Multiple approaches to ensure accuracy and reliability:
 
 ### System Requirements
 
-- **Operating System**: Windows 10/11, macOS 10.14+, Ubuntu 18.04+
-- **Python Version**: 3.7 or higher
-- **RAM**: Minimum 4GB, Recommended 8GB
-- **Storage**: 500MB free space for application and dependencies
+- **Operating System**: Windows 10/11, macOS 10.14+, Ubuntu 18.04+ (64-bit recommended)
+- **Python Version**: 3.7 or higher (3.9+ recommended for best performance)
+- **RAM**: Minimum 4GB, Recommended 8GB for large medical images
+- **Storage**: 500MB free space for application and dependencies, additional space for image data
+- **Display**: Minimum 1024x768 resolution for GUI interface
 
 ### Installation Steps
 
@@ -286,12 +287,23 @@ Multiple approaches to ensure accuracy and reliability:
    cd MedicalImgAnalysProto
    ```
 
-3. Install dependencies:
+3. (Optional but recommended) Create a virtual environment:
+   ```
+   python -m venv medical_img_env
+   source medical_img_env/bin/activate  # On Windows: medical_img_env\Scripts\activate
+   ```
+
+4. Install dependencies:
    ```
    pip install -r requirements.txt
    ```
 
-4. Run the application:
+5. Verify installation by running tests:
+   ```
+   python tests/run_tests.py
+   ```
+
+6. Run the application:
    ```
    python main.py
    ```

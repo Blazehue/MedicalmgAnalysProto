@@ -1,0 +1,2 @@
+analysis_date,image_path,image_type,original_mean_intensity,original_std_intensity,original_contrast,original_entropy,processed_mean_intensity,processed_std_intensity,processed_contrast,processed_entropy,total_abnormalities,abnormality_id,abnormality_type,abnormality_severity,abnormality_area,abnormality_confidence
+2025-09-14 19:06:19,xray_1.png,x-ray,68.74869918823242,36.70026463178927,0.5338321315913884,6.898838520050049,56.712459564208984,32.0232277888044,0.5646594775623898,6.923954486846924,1,1,fracture,medium,76.36753236814714,0

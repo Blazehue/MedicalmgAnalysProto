@@ -1,0 +1,14 @@
+{
+  "total_images_processed": 3,
+  "total_abnormalities_found": 24,
+  "images_with_abnormalities": 2,
+  "abnormality_types": {
+    "texture": 23,
+    "fracture": 1
+  },
+  "severity_distribution": {
+    "medium": 22,
+    "high": 2
+  },
+  "processing_success_rate": 1.0
+}

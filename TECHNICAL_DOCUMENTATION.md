@@ -39,15 +39,15 @@ This document provides a comprehensive overview of the Medical Image Analysis To
 
 ### Image Processing Libraries
 
-- **OpenCV-Python**: Core computer vision functions
-- **Scikit-Image**: Additional image processing algorithms
-- **Pillow**: Image loading and basic manipulation
+- **OpenCV-Python**: Core computer vision functions for image filtering, transformations, and feature detection
+- **Scikit-Image**: Additional image processing algorithms for segmentation and restoration
+- **Pillow**: Image loading, basic manipulation, and format conversion
 
 ### Data Handling
 
-- **Pandas**: Data manipulation and analysis
-- **JSON**: Configuration and data exchange
-- **CSV**: Data export format
+- **Pandas**: Data manipulation and analysis for statistical reporting
+- **JSON**: Configuration storage and data exchange between components
+- **CSV**: Data export format for further analysis in external tools
 
 ## Project Architecture
 

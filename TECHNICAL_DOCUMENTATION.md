@@ -401,16 +401,23 @@ Planned improvements for future versions:
 ## Contributing
 
 Guidelines for contributing to the project:
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a pull request
+1. Fork the repository on GitHub
+2. Create a feature branch for your changes
+3. Commit your changes with clear, descriptive messages
+4. Push to your forked repository
+5. Create a pull request with detailed description of changes
+6. Ensure all tests pass before submitting
+7. Follow the existing code style and documentation standards
+8. Add unit tests for new functionality
+9. Update documentation as needed
+10. Be responsive to feedback during code review
 
 ## License
 
 This project is for research and educational purposes only. Medical analysis results should not be used for diagnosis without professional medical review.
 
+The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
+
 ## Contact
 
-For questions or support, please contact the development team.
+For questions or support, please contact the development team through GitHub issues or email.
